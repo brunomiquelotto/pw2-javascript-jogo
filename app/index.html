@@ -1,0 +1,232 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Game Js</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/bootstrap.min.js"></script>
+
+	<style>
+		h2{
+			margin:0;
+		}
+		#nLogado{
+			background: #5c5c5c;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.centerLogin{
+			margin:0 auto;
+			padding: 0;
+			float: none;
+		}
+		.centerLogin label{
+			margin-right: 35px;
+			color: #fff;
+		}
+		.centerLogin label input{
+			color: #000;
+		}
+
+		#btnIniciar{
+			width: 180px;
+		}
+		
+		#info{
+			text-align: center;
+			padding-right: 2px;
+			padding-left: 2px;
+			padding-bottom: 0px;
+			padding-top: 10px;
+			margin:10px 0px;
+			height: auto;
+		}
+
+		#info h1{
+			font-size: 24px;
+
+		}
+		#info h2{	
+			font-size: 20px;
+
+		}
+		#info p{
+			font-size: 14px;
+		}
+		.rank{
+			float: left;
+			padding: 0;			
+			margin:0 auto;
+			border-radius: 10px;
+			background-color: #ffffff;
+			margin-top: 30px;
+			padding-bottom: 5px;
+			width: 240px;
+			
+		}
+		
+		.rank > div {
+			border-radius: 10px;
+			background-color: #6f6f6f;
+			padding: 5px 0 5px 0;
+			color:#000;
+			cursor: pointer;
+		}
+		.rank > div:hover{
+			background-color: #afafaf;
+		}
+		.rank ul{
+			list-style: none;
+			padding: 0;
+			padding-right: 15px;
+			padding-left:15px;
+			margin-top: 10px;
+		}
+		.rank ul li{
+			float: left;
+			width:100%;
+		}
+		.rnome{
+			float: left;
+		}
+		.rpontos{
+			float: right;
+		}
+		#cImagem{
+			height: 397px;
+			float: left;
+			background: url('../img/')center center no-repeat;
+		}
+		#perguntas{
+			height: 210px;
+			padding:0px 20px 0 20px;
+			margin: 0px calc(4% - 20px);
+		}
+		#campoQuestao{
+			font-size: 14px;
+		}
+		.abreFechaRank{
+			display: none;
+		}
+		#btnResp{
+			margin:50px 0px 0px 0px;
+			text-align: center;
+		}
+		.centerBotao{
+			text-align: center;
+		}
+		.centerBotao > div{
+			margin-top: 80px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+	</style>
+
+	<script>
+		function abreFechaRanking(){
+			var lrank = document.getElementById('listaRank');
+
+			lrank.classList.toggle('abreFechaRank');
+		}
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<header id="topo" class="row">			
+			<div id="nLogado" class="col-md-12">
+				<div class="col-md-8 centerLogin">
+					<label >Nome: <input type="text" /></label>
+					<label>RA: <input type="text" /></label>
+					<input id="btnIniciar" type="button" class="btn btn-primary" value="Iniciar Jogo">
+				</div>
+			</header>
+			<div class="row">
+				<aside id="info" class="col-md-3 jumbotron">					
+					<h1>JS Game Web 2</h1>					
+					<p>
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd
+						asiudhauishdiuashdiuashdiuashd					
+					</p>
+					
+					<div class="col-md-12 ">
+						<div class="rank">	
+							<div onclick="abreFechaRanking()"><h2 >Ranking de Pontos</h2> <i class="fa fa-trophy" aria-hidden="true"></i></div>
+							<ul id="listaRank">
+								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+							</ul>						
+						</div>
+					</div>
+				</aside>
+				<section id="cImagem" class="col-md-8">
+					<picture>
+						<img src="" alt="">
+					</picture>
+
+				</section>
+				
+				<section id="perguntas" class="col-md-8 jumbotron">	
+					<div class="container">	
+						<div class="row">		
+							<div class="col-md-7">
+								<h3>Músculo <span id="numeroMusculo"></span> selecionado </h3> 
+								<p id="campoQuestao" class="list-group-item-text">asdas dasdasdasdasdasd asdasdasd asdasd asdasdasdasda sdasdas dasdasdasdas dasdasdasdasdasdasdasd?</p>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										Option one is this and that;
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										Option two can be something 
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										Option two can be something else 
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										Option two can be something 
+									</label>
+								</div>						
+							</div>
+							<div class="col-md-5 centerBotao">
+								<div>TEMPO: <span id="tempo">00</span> s</div>
+								<input type="button" class="btn btn-primary" value="Responder" id="btnResp">
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+		</div>
+	</body>
+	</html>
