@@ -1,0 +1,113 @@
+h2{
+    margin:0;
+}
+#nLogado{
+    background: #5c5c5c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.centerLogin{
+    margin:0 auto;
+    padding: 0;
+    float: none;
+}
+.centerLogin label{
+    margin-right: 35px;
+    color: #fff;
+}
+.centerLogin label input{
+    color: #000;
+}
+
+#btnIniciar{
+    width: 180px;
+}
+
+#info{
+    text-align: center;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin:10px 0px;
+    height: auto;
+}
+
+#info h1{
+    font-size: 24px;
+
+}
+#info h2{	
+    font-size: 20px;
+
+}
+#info p{
+    font-size: 14px;
+}
+.rank{
+    float: left;
+    padding: 0;			
+    margin:0 auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    width: 240px;
+    
+}
+
+.rank > div {
+    border-radius: 10px;
+    background-color: #6f6f6f;
+    padding: 5px 0 5px 0;
+    color:#000;
+    cursor: pointer;
+}
+.rank > div:hover{
+    background-color: #afafaf;
+}
+.rank ul{
+    list-style: none;
+    padding: 0;
+    padding-right: 15px;
+    padding-left:15px;
+    margin-top: 10px;
+}
+.rank ul li{
+    float: left;
+    width:100%;
+}
+.rnome{
+    float: left;
+}
+.rpontos{
+    float: right;
+}
+#cImagem{
+    height: 397px;
+    float: left;
+    background: url('../img/')center center no-repeat;
+}
+#perguntas{
+    height: 210px;
+    padding:0px 20px 0 20px;
+    margin: 0px calc(4% - 20px);
+}
+#campoQuestao{
+    font-size: 14px;
+}
+.abreFechaRank{
+    display: none;
+}
+#btnResp{
+    margin:50px 0px 0px 0px;
+    text-align: center;
+}
+.centerBotao{
+    text-align: center;
+}
+.centerBotao > div{
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 20px;
+}
