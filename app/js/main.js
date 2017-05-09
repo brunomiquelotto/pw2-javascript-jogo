@@ -4,25 +4,59 @@ function abreFechaRanking(){
 }
 
 var perguntas = [
-    {id: 1, pergunta:'Qual seu nome?', altA: "Biceps braquial", altB: "Triceps braquial", altC: "Deltoid", altD:"Extensor"},
+    {id: 1, pergunta:'Qual o nome do musculo selecionado?', respostas:
+        [
+            {alt: 'a', resp:"Biceps braquial"},
+            {alt:'b', resp:"Triceps braquial"},
+            {alt: 'c', resp:"Deltoid"},
+            {alt: 'd', resp:"Extensor"}
+        ]
+    },
     {},
     {}
 ];
 
+var perguntaSelecionada = undefined;
+var parteCorpoSelecionada = undefined;
+
 var parteCorpo = [
-    {id: 1, resp1: 'a', resp2: 'b', resp3: 'c'},
-    {id: 2, resp1: 'b', resp2: 'c', resp3: 'd'},
-    {id: 3, resp1: 'c', resp2: 'd', resp3: 'a'},
-    {id: 4, resp1: 'd', resp2: 'a', resp3: 'b'},
+    {id: 1, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
+    {id: 2, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
+    {id: 3, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
+    {id: 4, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
 ];
 
 function selecionaParteDoCorpo(id) {
     var p = perguntas.find(x => x.id == id);
-    console.log(p.altA);
-    document.getElementById('resp1').innerText = p.altA;
-    rb = document.getElementById('resp2');
-    rb = document.getElementById('resp3');
-    document.getElementById('resp4').innerHTML = p.altD;
+    document.getElementById('campoQuestao').innerText = p.pergunta;
+    document.getElementById('resp1').innerText = p.respostas.find(r => r.alt == 'a').resp;
+    document.getElementById('resp2').innerText = p.respostas.find(r => r.alt == 'b').resp;
+    document.getElementById('resp3').innerText = p.respostas.find(r => r.alt == 'c').resp;
+    document.getElementById('resp4').innerText = p.respostas.find(r => r.alt == 'd').resp;
+    perguntaSelecionada = p;
+    parteCorpoSelecionada = parteCorpo.find(x => x.id == 1);
+    //Fazer iniciar o tempo
+}
+
+function responder() {
+    var idResposta = document.getElementsByName('optionRadios')[0].value;
+    //
 }
 
 
