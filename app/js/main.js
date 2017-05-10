@@ -55,8 +55,16 @@ function selecionaParteDoCorpo(id) {
 }
 
 function responder() {
-    var idResposta = document.getElementsByName('optionRadios')[0].value;
-    //
+    var resposta = document.getElementsByName('optionRadios')[0].value;
+    var idDoCorpo = document.getElementById()
+    
+   if(parteCorpoSelecionada.questoes.find(x => x.pergunta == perguntaSelecionada.id).alternativa == resposta){
+        contaPonto();
+   }
+
+
+   
+ 
 }
 
 
