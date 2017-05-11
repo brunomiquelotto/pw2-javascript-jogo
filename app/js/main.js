@@ -3,18 +3,6 @@ function abreFechaRanking(){
     lrank.classList.toggle('abreFechaRank');
 }
 
-var perguntas = [
-    {id: 1, pergunta:'Qual o nome do musculo selecionado?', respostas:
-        [
-            {alt: 'a', resp:"Biceps braquial"},
-            {alt:'b', resp:"Triceps braquial"},
-            {alt: 'c', resp:"Deltoid"},
-            {alt: 'd', resp:"Extensor"}
-        ]
-    },
-    {},
-    {}
-];
 
 var perguntaSelecionada = undefined;
 var parteCorpoSelecionada = undefined;
