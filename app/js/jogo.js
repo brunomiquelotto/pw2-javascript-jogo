@@ -47,7 +47,6 @@ function validador(nomeJogador, raJogador){
         alert('Digite seu Nome e RA para começar a jogar !');
         return false;
     }
-
     return true;
 }
 
