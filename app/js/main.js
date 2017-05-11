@@ -43,14 +43,17 @@ var parteCorpo = [
 ];
 
 function selecionaParteDoCorpo(id) {
-    var p = perguntas.find(x => x.id == id);
+
+    var rand = Math.floor( Math.random() *perguntas.length + 1 ) +1;
+
+    var p = perguntas.find(x => x.id == rand);
     document.getElementById('campoQuestao').innerText = p.pergunta;
     document.getElementById('resp1').innerText = p.respostas.find(r => r.alt == 'a').resp;
     document.getElementById('resp2').innerText = p.respostas.find(r => r.alt == 'b').resp;
     document.getElementById('resp3').innerText = p.respostas.find(r => r.alt == 'c').resp;
     document.getElementById('resp4').innerText = p.respostas.find(r => r.alt == 'd').resp;
     perguntaSelecionada = p;
-    parteCorpoSelecionada = parteCorpo.find(x => x.id == 1);
+    parteCorpoSelecionada = parteCorpo.find(x => x.id == id);
     //Fazer iniciar o tempo
 }
 
