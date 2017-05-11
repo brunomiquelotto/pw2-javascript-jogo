@@ -24,3 +24,26 @@ var perguntas = [
         ]    
      }
 ];
+
+var parteCorpo = [
+    {id: 1, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
+    {id: 2, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
+    {id: 3, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
+    {id: 4, questoes:[
+        {pergunta:1, alternativa: 'a'},
+        {pergunta:2, alternativa: 'b'},
+        {pergunta:3, alternativa: 'c'}
+    ]},
+];

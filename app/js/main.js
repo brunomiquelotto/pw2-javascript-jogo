@@ -1,39 +1,16 @@
+//Variaveis
+var jogadorAtual = undefined;
+var perguntaSelecionada = undefined;
+var parteCorpoSelecionada = undefined;
+
+
 function abreFechaRanking(){
     var lrank = document.getElementById('listaRank');
     lrank.classList.toggle('abreFechaRank');
 }
 
-
-var perguntaSelecionada = undefined;
-var parteCorpoSelecionada = undefined;
-
-var parteCorpo = [
-    {id: 1, questoes:[
-        {pergunta:1, alternativa: 'a'},
-        {pergunta:2, alternativa: 'b'},
-        {pergunta:3, alternativa: 'c'}
-    ]},
-    {id: 2, questoes:[
-        {pergunta:1, alternativa: 'a'},
-        {pergunta:2, alternativa: 'b'},
-        {pergunta:3, alternativa: 'c'}
-    ]},
-    {id: 3, questoes:[
-        {pergunta:1, alternativa: 'a'},
-        {pergunta:2, alternativa: 'b'},
-        {pergunta:3, alternativa: 'c'}
-    ]},
-    {id: 4, questoes:[
-        {pergunta:1, alternativa: 'a'},
-        {pergunta:2, alternativa: 'b'},
-        {pergunta:3, alternativa: 'c'}
-    ]},
-];
-
 function selecionaParteDoCorpo(id) {
-
-    var rand = Math.floor( Math.random() *perguntas.length + 1 ) +1;
-
+    var rand = numeroRandomico(perguntas.length);
     var p = perguntas.find(x => x.id == rand);
     document.getElementById('campoQuestao').innerText = p.pergunta;
     document.getElementById('resp1').innerText = p.respostas.find(r => r.alt == 'a').resp;
@@ -47,15 +24,9 @@ function selecionaParteDoCorpo(id) {
 
 function responder() {
     var resposta = document.getElementsByName('optionRadios')[0].value;
-    var idDoCorpo = document.getElementById()
-    
-   if(parteCorpoSelecionada.questoes.find(x => x.pergunta == perguntaSelecionada.id).alternativa == resposta){
+    if(parteCorpoSelecionada.questoes.find(x => x.pergunta == perguntaSelecionada.id).alternativa == resposta){
         contaPonto();
-   }
-
-
-   
- 
+    } 
 }
 
 
