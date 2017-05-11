@@ -1,3 +1,6 @@
+var conTempo;
+var timeStart = 60; 
+
 function iniciarJogo(){
    var nome = document.getElementById('nomeJogador');
    var ra = document.getElementById('raJogador');
@@ -9,15 +12,6 @@ function iniciarJogo(){
    
    startCountdown();
 }
-
-
-var conTempo;
-
-
-var timeStart = 60; 
-
-
-
 function startCountdown(){    
        if((timeStart - 1) >= 0){
                timeStart = timeStart - 1;
