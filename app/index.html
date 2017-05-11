@@ -13,9 +13,10 @@
 		<header id="topo" class="row">			
 			<div id="nLogado" class="col-md-12">
 				<div class="col-md-8 centerLogin">
-					<label >Nome: <input type="text" /></label>
-					<label>RA: <input type="text" /></label>
-					<input id="btnIniciar" type="button" class="btn btn-primary" value="Iniciar Jogo">
+					<label >Nome: <input type="text" id="nomeJogador"/></label>
+					<label>RA: <input type="text" id="raJogador"/></label>
+					<input id="btnIniciar" type="button" class="btn btn-primary showTrue" value="Iniciar Jogo" onclick="iniciarJogo()">
+					<input id="btnRecomeçar" type="button" class="btn btn-warning abreFechaRank" value="Recomeçar Jogo" onclick="reiniciarJogo()">
 				</div>
 			</header>
 			<div class="row">
@@ -93,7 +94,7 @@
 								</div>						
 							</div>
 							<div class="col-md-5 centerBotao">
-								<div>TEMPO: <span id="tempo">00</span> s</div>
+								<div>TEMPO: <span id="tempo">60</span> segundos</div>
 								<input type="button" class="btn btn-primary" value="Responder" id="btnResp" onclick="responder()">
 							</div>
 						</div>
@@ -103,5 +104,7 @@
 		</div>
 		<script src="js/main.js"></script>
 		<script src="js/ranking.js"></script>
+		<script src="js/iniciarJogo.js"></script>
+		<script src="js/reiniciarJogo.js"></script>
 	</body>
 	</html>
