@@ -25,7 +25,7 @@ function selecionaParteDoCorpo(id) {
 function responder() {
     var resposta = document.getElementsByName('optionRadios')[0].value;
     if(parteCorpoSelecionada.questoes.find(x => x.pergunta == perguntaSelecionada.id).alternativa == resposta){
-        contaPonto();
+        contaPonto(10);
     } 
 }
 

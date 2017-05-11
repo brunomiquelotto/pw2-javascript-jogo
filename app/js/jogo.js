@@ -4,11 +4,15 @@ var timeStart = 60;
 function iniciarJogo(){
    var nomeJogador = document.getElementById('nomeJogador');
    var raJogador = document.getElementById('raJogador');
+   if(!validador(nomeJogador, raJogador))
+        return;
+   
    nomeJogador.setAttribute('disabled','true');
    raJogador.setAttribute('disabled','true');
    jogadorAtual = {nome: nomeJogador.value, ra: raJogador.value, pontos: 0};
    btnIniciar.classList.toggle('abreFechaRank');
    btnRecomeçar.classList.toggle('abreFechaRank');
+
    startCountdown();
 }
 function startCountdown() {
@@ -36,5 +40,14 @@ function reiniciarJogo(){
 
 function contaPonto(pontos) {
     jogadorAtual.pontos += pontos;
+}
+
+function validador(nomeJogador, raJogador){
+    if((nomeJogador.value == '') || (raJogador.value == '')){
+        alert('Digite seu Nome e RA para começar a jogar !');
+        return false;
+    }
+
+    return true;
 }
 
