@@ -1,120 +1,120 @@
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Game Js</title>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Js</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-	<div class="container">
-		<header id="topo" class="row">			
-			<div id="nLogado" class="col-md-12">
-				<div class="col-md-8 centerLogin">
-					<label >Nome: <input type="text" id="nomeJogador"/></label>
-					<label>RA: <input type="text" id="raJogador"/></label>
-					<input id="btnIniciar" type="button" class="btn btn-primary showTrue" value="Iniciar Jogo" onclick="iniciarJogo()">
-					<input id="btnRecomeçar" type="button" class="btn btn-warning abreFechaRank" value="Recomeçar Jogo" onclick="reiniciarJogo()">
-				</div>
-			</header>
-			<div class="row">
-				<aside id="info" class="col-md-3 jumbotron">					
-					<h1>JS Game Web 2</h1>					
-					<p>
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd
-						asiudhauishdiuashdiuashdiuashd					
-					</p>
-					
-					<div class="col-md-12 ">
-						<div class="rank">	
-							<div onclick="abreFechaRanking()"><h2 >Ranking de Pontos</h2> <i class="fa fa-trophy" aria-hidden="true"></i></div>
-							<ul id="listaRank">
-								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
-								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
-								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
-								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
-								<li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
-							</ul>						
-						</div>
-					</div>
-				</aside>
-				<section id="cImagem" class="col-md-8">
-					<picture>
-						<img src="img/braco.png" id="img1" style="position:absolute" height="300" width="150">
-						<img src="img/biceps.png" id="img2" style="position:absolute" height="300" width="150">
-						<img src="img/triceps.png" id="img3" style="position:absolute" height="300" width="150">
-					</picture>
-					<style>
-						#img2 {
-							opacity: .1;
-						}
-						#img2:hover {
-							opacity: .9;
-						}
-						#img3 {
-							opacity: .1;
-						}
-						#img3:hover {
-							opacity: .8;
-						}
-					</style>
-				</section>
-				
-				<section id="perguntas" class="col-md-8 jumbotron">	
-					<div class="container">	
-						<div class="row">		
-							<div class="col-md-7">
-								<h3>Músculo <span id="numeroMusculo"></span> selecionado </h3> 
-								<p id="campoQuestao" class="list-group-item-text"></p>
-								<div class="radio">
-									<label>
+    <div class="container">
+        <header id="topo" class="row">
+            <div id="nLogado" class="col-md-12">
+                <div class="col-md-8 centerLogin">
+                    <label>Nome: <input type="text" id="nomeJogador"/></label>
+                    <label>RA: <input type="text" id="raJogador"/></label>
+                    <input id="btnIniciar" type="button" class="btn btn-primary showTrue" value="Iniciar Jogo" onclick="iniciarJogo()">
+                    <input id="btnRecomeçar" type="button" class="btn btn-warning abreFechaRank" value="Recomeçar Jogo" onclick="reiniciarJogo()">
+                </div>
+        </header>
+        <div class="row">
+            <aside id="info" class="col-md-3 jumbotron">
+                <h1>Bem Vindo ao JS Game Web 2</h1>
+                <p>
+                    Prontos para começar a jogar?Antes vamos passar umas instruções.
+                </p>
+                <p>
+                    Então vamos lá, para iniciar o jogo você deve entrar com seu Nome e Ra, após a confirmação, será gerado um tempo de 60 segundos, para você selecionar o músculo, após a seleção será gerado quatro alternativas com o nome do musculo, lembrando que apenas
+                    uma será verdadeira.Animados para começar então vamos lá.
+                </p>
+
+                <div class="col-md-12 ">
+                    <div class="rank">
+                        <div onclick="abreFechaRanking()">
+                            <h2>Ranking de Pontos</h2> <i class="fa fa-trophy" aria-hidden="true"></i></div>
+                        <ul id="listaRank">
+                            <li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+                            <li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+                            <li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+                            <li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+                            <li><span class="rnome">Wallace</span><span class="rpontos">10</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <section id="cImagem" class="col-md-8">
+                <picture>
+                    <img src="img/braco.png" id="img1" style="position:absolute" height="300" width="150">
+                    <img src="img/biceps.png" id="img2" style="position:absolute" height="300" width="150">
+                    <img src="img/triceps.png" id="img3" style="position:absolute" height="300" width="150">
+                </picture>
+                <style>
+                    #img2 {
+                        opacity: .1;
+                    }
+                    
+                    #img2:hover {
+                        opacity: .9;
+                    }
+                    
+                    #img3 {
+                        opacity: .1;
+                    }
+                    
+                    #img3:hover {
+                        opacity: .8;
+                    }
+                </style>
+            </section>
+
+            <section id="perguntas" class="col-md-8 jumbotron">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>Músculo <span id="numeroMusculo"></span> selecionado </h3>
+                            <p id="campoQuestao" class="list-group-item-text"></p>
+                            <div class="radio">
+                                <label>
 										<input type="radio" name="optionsRadios" value="a" checked>
 										<span id="resp1"></span>
 									</label>
-								</div>
-								<div class="radio">
-									<label>
+                            </div>
+                            <div class="radio">
+                                <label>
 										<input type="radio" name="optionsRadios" value="b">
 										<span id="resp2"></span>
 									</label>
-								</div>
-								<div class="radio">
-									<label>
+                            </div>
+                            <div class="radio">
+                                <label>
 										<input type="radio" name="optionsRadios" value="c">
 										<span id="resp3"></span>
 									</label>
-								</div>
-								<div class="radio">
-									<label>
+                            </div>
+                            <div class="radio">
+                                <label>
 										<input type="radio" name="optionsRadios" value="d">
 										<span id="resp4"></span>
 									</label>
-								</div>						
-							</div>
-							<div class="col-md-5 centerBotao">
-								<div>TEMPO: <span id="tempo">60</span> segundos</div>
-								<input type="button" class="btn btn-primary" value="Responder" id="btnResp" onclick="responder()">
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-		<script src="js/main.js"></script>
-		<script src="js/ranking.js"></script>
-		<script src="js/jogo.js"></script>
-		<script src="js/funcoesNumericas.js"></script>
-	</body>
-	</html>
+                            </div>
+                        </div>
+                        <div class="col-md-5 centerBotao">
+                            <div>TEMPO: <span id="tempo">60</span> segundos</div>
+                            <input type="button" class="btn btn-primary" value="Responder" id="btnResp" onclick="responder()">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/ranking.js"></script>
+        <script src="js/jogo.js"></script>
+        <script src="js/funcoesNumericas.js"></script>
+</body>
+
+</html>
