@@ -21,7 +21,7 @@ function modificaHTML(id) {
 	ranking.forEach(function(jogador,index) {
 		var element = document.createElement("li");
 		var span1 = document.createElement("span");
-		span1.innerText = jogador.nome;
+		span1.innerText = jogador.nome + ' ' + jogador.ra;
 		span1.className += 'rnome';
 		element.appendChild(span1);
 		var span2 = document.createElement("span");
