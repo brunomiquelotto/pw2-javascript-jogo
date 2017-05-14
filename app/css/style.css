@@ -33,6 +33,16 @@ h2{
     height: auto;
 }
 
+#cImagem{
+    text-align: center;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin:10px 0px;
+    height: auto;
+}
+
 #info h1{
     font-size: 24px;
 
