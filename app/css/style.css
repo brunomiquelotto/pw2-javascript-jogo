@@ -38,8 +38,6 @@ h2 {
     margin: 10px 0px;
     height: auto;
 }
-
-<<<<<<< HEAD
 #cImagem{
     text-align: center;
     padding-right: 2px;
@@ -51,9 +49,6 @@ h2 {
 }
 
 #info h1{
-=======
-#info h1 {
->>>>>>> e3b78d8b4835296c06b417cd05dae06b7ed8ba9e
     font-size: 24px;
 }
 
@@ -64,6 +59,7 @@ h2 {
 #info p {
     font-size: 16px;
     font-family: sans-serif;
+    padding: 0px 10px 0px 10px;
 }
 
 .rank {
@@ -117,9 +113,8 @@ h2 {
 }
 
 #perguntas {
-    height: 210px;
     padding: 0px 20px 0 20px;
-    margin: 0px calc(4% - 20px);
+        margin: 10px;
 }
 
 #campoQuestao {
@@ -131,7 +126,7 @@ h2 {
 }
 
 #btnResp {
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0px 10px 0px;
     text-align: center;
 }
 
@@ -140,7 +135,8 @@ h2 {
 }
 
 .centerBotao>div {
-    margin-top: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 20px;
 }

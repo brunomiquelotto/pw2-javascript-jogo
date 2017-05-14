@@ -26,22 +26,22 @@ var perguntas = [
 ];
 
 var parteCorpo = [
-    {id: 1, questoes:[
+    {id: 'biceps', questoes:[
         {pergunta:1, alternativa: 'a'},
         {pergunta:2, alternativa: 'b'},
         {pergunta:3, alternativa: 'c'}
     ]},
-    {id: 2, questoes:[
+    {id: 'triceps', questoes:[
         {pergunta:1, alternativa: 'a'},
         {pergunta:2, alternativa: 'b'},
         {pergunta:3, alternativa: 'c'}
     ]},
-    {id: 3, questoes:[
+    {id: 'extensor', questoes:[
         {pergunta:1, alternativa: 'a'},
         {pergunta:2, alternativa: 'b'},
         {pergunta:3, alternativa: 'c'}
     ]},
-    {id: 4, questoes:[
+    {id: 'deltoid', questoes:[
         {pergunta:1, alternativa: 'a'},
         {pergunta:2, alternativa: 'b'},
         {pergunta:3, alternativa: 'c'}
