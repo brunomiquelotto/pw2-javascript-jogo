@@ -4,6 +4,7 @@ var perguntaSelecionada = undefined;
 var parteCorpoSelecionada = undefined;
 var qntResposta = 0;
 var primeiroClick = 0;
+var jogoFinalizado = false;
 
 
 function abreFechaRanking(){
@@ -18,9 +19,6 @@ function selecionaParteDoCorpo(e) {
 
     if(primeiroClick == 0)
     perguntasGeral.classList.toggle('abreFechaRank');
-    
-
-    
 
     document.getElementById('campoQuestao').innerText = p.pergunta;
     document.getElementById('resp1').innerText = p.respostas.find(r => r.alt == 'a').resp;
@@ -33,20 +31,16 @@ function selecionaParteDoCorpo(e) {
 }
 
 function responder() {
-   
-    
     document.getElementById(parteCorpoSelecionada.id).setAttribute('display', 'none');
-
     perguntaseRespostas.setAttribute('display', 'none');
-
     var resposta = document.getElementsByName('optionsRadios')[0].value;
     if(parteCorpoSelecionada.questoes.find(x => x.pergunta == perguntaSelecionada.id).alternativa == resposta){
         contaPonto(10);
     } 
     qntResposta++;
-
-    if(qntResposta == 4){              
-        addNovoJogador(jogadorAtual);        
+    if(qntResposta == parteCorpo.length){              
+        addNovoJogador(jogadorAtual);
+        jogoFinalizado = true;
     }    
 }
 

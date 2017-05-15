@@ -7,13 +7,11 @@ function iniciarJogo(){
 
    if(!validador(nomeJogador, raJogador))
         return;
-   
   
    nomeJogador.setAttribute('disabled','true');
    raJogador.setAttribute('disabled','true');
    jogadorAtual = {nome: nomeJogador.value, ra: raJogador.value, pontos: 0};
 
-   
    blocoImagem.classList.toggle('abreFechaRank');
    btnIniciar.classList.toggle('abreFechaRank');
    btnRecomeçar.classList.toggle('abreFechaRank');
@@ -27,9 +25,10 @@ function startCountdown() {
                 timeStart = timeStart - 1;
                 tempo.innerText =  timeStart;
                 conTempo = setTimeout('startCountdown()',1000);
-                }else{
-                    contaPonto(timeStart);
-                }
+            }
+            else if (!jogoFinalizado){
+                contaPonto(timeStart);
+            }
        }
 }
 
@@ -42,6 +41,8 @@ function reiniciarJogo(){
     ra.value = "";
     nome.removeAttribute('disabled');
     ra.removeAttribute('disabled');
+    jogadorAtual = undefined;
+    jogoFinalizado = false;
 
     primeiroClick = 0;
     qntResposta = 0;
