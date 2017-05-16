@@ -6,44 +6,17 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
-	<style>
-		svg #deltoid:hover{
-			fill: #f00;
-			cursor: pointer;	
-		}
-
-		svg #triceps:hover{
-			fill: #f00;
-			cursor: pointer;
-		}
-
-		svg #extensor:hover{
-			fill: #f00;
-			cursor: pointer;
-		}
-
-		svg #biceps:hover{
-			fill: #f00;
-			cursor: pointer;
-		}
-
-	</style>
-
-	<script type="text/javascript">
-		document.getElementById("extensor").addEventListener("click", function(){
-			alert("Teste Click");
-		});
-	</script>
 	</head>
 	<body>
 		<div class="container">
 			<header id="topo" class="row">			
 				<div id="nLogado" class="col-md-12">
-					<div class="col-md-8 centerLogin">
+					<div class="col-md-10 centerLogin">
 						<label >Nome: <input type="text" id="nomeJogador"/></label>
 						<label>RA: <input type="text" id="raJogador"/></label>
 						<input id="btnIniciar" type="button" class="btn btn-primary showTrue" value="Iniciar Jogo" onclick="iniciarJogo()">
-						<input id="btnRecomeçar" type="button" class="btn btn-warning abreFechaRank" value="Recomeçar Jogo" onclick="reiniciarJogo()">
+						<input id="btnRecomeçar" type="button" class="btn btn-warning abreFechaRank" value="Reiniciar" onclick="reiniciarJogo()">
+						<div class="divTempo">TEMPO: <span id="tempo">60</span> segundos</div>
 					</div>
 				</header>
 				<div class="row">
@@ -100,9 +73,11 @@
 								</div>
 								<div class="col-md-12 centerBotao">
 									<input type="button" class="btn btn-primary" value="Responder" id="btnResp" onclick="responder()">
-									<div>TEMPO: <span id="tempo">60</span> segundos</div>
+									
 									</div>
+									
 								</div>
+								<p id="mFim1"></p>
 							</div>
 						</div>
 					</section>
@@ -343,8 +318,9 @@
 		<path fill-rule="evenodd" fill="#101010" d="M120.886,242.632c0.217,0.563,0.04,0.741-0.526,0.541
 			C120.313,242.776,120.495,242.603,120.886,242.632z"/>
 	</g>
-	</svg>
-						</div>					
+	</svg> 
+						</div>	
+						<p id="mFim2"></p>				
 					</section>
 				</div>
 			</div>
@@ -353,6 +329,8 @@
 			<script src="js/jogo.js"></script>
 			<script src="js/funcoesNumericas.js"></script>
 			<script src="js/ranking.js"></script>
+
+		
 		</body>
 		</html>
 

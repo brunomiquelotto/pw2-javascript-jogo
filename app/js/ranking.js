@@ -2,6 +2,8 @@
 var ranking = [];
 var maximoJogadoresRanking = 5;
 
+
+//Função de adicionar novo jogador ao Ranking
 function addNovoJogador(jogador) {
 	ranking.push(jogador);
 	ordenaRanking();
@@ -9,12 +11,14 @@ function addNovoJogador(jogador) {
 	modificaHTML('listaRank');
 }
 
+//Função que ordena o Ranking, de acordo com os maiores pontos;
 function ordenaRanking() {
 	ranking.sort(function(a, b) {
 		return b.pontos - a.pontos;
 	});
 }
 
+// Injeta o conteudo no ranking
 function modificaHTML(id) {
 	var lista = document.getElementById(id);
 	lista.innerHTML = "";

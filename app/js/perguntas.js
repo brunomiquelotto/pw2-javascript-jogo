@@ -1,3 +1,4 @@
+//Perguntas Pesquisadas
 var perguntas = [
     {id: 1, pergunta:'Qual o nome do musculo selecionado?', respostas:
         [
@@ -25,25 +26,26 @@ var perguntas = [
      }
 ];
 
+//Partes do corpo(Musculos)
 var parteCorpo = [
     {id: 'biceps', questoes:[
         {pergunta:1, alternativa: 'a'},
-        {pergunta:2, alternativa: 'b'},
-        {pergunta:3, alternativa: 'c'}
+        {pergunta:2, alternativa: 'a'},
+        {pergunta:3, alternativa: 'a'}
     ]},
     {id: 'triceps', questoes:[
-        {pergunta:1, alternativa: 'a'},
+        {pergunta:1, alternativa: 'b'},
         {pergunta:2, alternativa: 'b'},
-        {pergunta:3, alternativa: 'c'}
+        {pergunta:3, alternativa: 'b'}
     ]},
     {id: 'extensor', questoes:[
-        {pergunta:1, alternativa: 'a'},
-        {pergunta:2, alternativa: 'b'},
-        {pergunta:3, alternativa: 'c'}
+        {pergunta:1, alternativa: 'd'},
+        {pergunta:2, alternativa: 'd'},
+        {pergunta:3, alternativa: 'd'}
     ]},
     {id: 'deltoid', questoes:[
-        {pergunta:1, alternativa: 'a'},
-        {pergunta:2, alternativa: 'b'},
+        {pergunta:1, alternativa: 'c'},
+        {pergunta:2, alternativa: 'c'},
         {pergunta:3, alternativa: 'c'}
     ]},
 ];
